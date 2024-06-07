@@ -1,0 +1,701 @@
+Received: from AS8PR08MB10142.eurprd08.prod.outlook.com
+ (2603:10a6:20b:633::21) by GV1PR08MB8475.eurprd08.prod.outlook.com with
+ HTTPS; Mon, 20 May 2024 08:29:45 +0000
+Received: from DU7P194CA0014.EURP194.PROD.OUTLOOK.COM (2603:10a6:10:553::31)
+ by AS8PR08MB10142.eurprd08.prod.outlook.com (2603:10a6:20b:633::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7587.36; Mon, 20 May
+ 2024 08:29:43 +0000
+Received: from DU2PEPF0001E9C6.eurprd03.prod.outlook.com
+ (2603:10a6:10:553:cafe::ab) by DU7P194CA0014.outlook.office365.com
+ (2603:10a6:10:553::31) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7587.35 via Frontend
+ Transport; Mon, 20 May 2024 08:29:43 +0000
+Authentication-Results: spf=fail (sender IP is 130.117.89.11)
+ smtp.mailfrom=mail64.atl261.mcdlv.net; dkim=fail (signature did not verify)
+ header.d=letsdefend.io;dmarc=fail action=none
+ header.from=letsdefend.io;compauth=none reason=405
+Received-SPF: Fail (protection.outlook.com: domain of mail64.atl261.mcdlv.net
+ does not designate 130.117.89.11 as permitted sender)
+ receiver=protection.outlook.com; client-ip=130.117.89.11;
+ helo=jupiterb.iberlayer.com;
+Received: from jupiterb.iberlayer.com (130.117.89.11) by
+ DU2PEPF0001E9C6.mail.protection.outlook.com (10.167.8.75) with Microsoft SMTP
+ Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.7611.14 via
+ Frontend Transport; Mon, 20 May 2024 08:29:43 +0000
+Received: from orcus.iberlayer.com (orcus.iberlayer.com [130.117.89.26])
+	by jupiterb.iberlayer.com (Postfix) with ESMTP id 0BA0AB24
+	for <juan.torres@colaborador.threepoints.com>; Mon, 20 May 2024 10:29:43 +0200 (CEST)
+Received: from orcus.iberlayer.com (localhost [127.0.0.1])
+	by orcus.iberlayer.com (Postfix) with ESMTP id E18351002AC62
+	for <juan.torres@colaborador.threepoints.com>; Mon, 20 May 2024 10:29:40 +0200 (CEST)
+X-Envelope-From: <bounce-mc.us14_171215441.9589741-b2ad357213@mail64.atl261.mcdlv.net>
+X-Original-To: <juan.torres@colaborador.threepoints.com>
+Received: from mail64.atl261.mcdlv.net (mail64.atl261.mcdlv.net [198.2.142.64])
+	by orcus.iberlayer.com (Postfix) with ESMTPS id A85BA1002B49F
+	for <juan.torres@colaborador.threepoints.com>; Mon, 20 May 2024 10:29:40 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=letsdefend.io; s=k2;
+	t=1716193769; x=1716454269; i=olivia@letsdefend.io;
+	bh=hg/JPplH7dgrZz6LTL1Op+X36FHGESnmY5kCOywkZLY=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=RwLzQq0m/C3zrvTorHo8AEhISpm+DfINxsgOdouNXYKNGkop+YZ8654yBAIor28dw
+	 LQO5gcOaSZyTf1xBKVZikTRPXMjxWxM8j0QPzUe6jDjpMzq3B/cuKXToSqk4/4mJ8u
+	 PQxlMne4/s4WW8z2wO749qJ4wS4uiMFUYX748FiwVqMZV91ziW7P3x96pyQoQchW1w
+	 LM9Dr8WcsL5Z0uo4+nWCh0Y7Uf4kaGTgBhEnm5RemqgW4dJYmlJDDX8ljr9SRTe8UE
+	 wM/xVxslHdVCuk+gOBLmKTOPdLrmlmHDSzB1Vc8Zk4kv/BEY6HnM4RR45zrQUbPxPd
+	 sXjdAy44awlNQ==
+Received: from localhost (localhost [127.0.0.1])
+	by mail64.atl261.mcdlv.net (Mailchimp) with ESMTP id 4VjW2K5QsXz6CRgyq
+	for <juan.torres@colaborador.threepoints.com>; Mon, 20 May 2024 08:29:29 +0000 (GMT)
+Subject: [Correo publicitario detectado] =?utf-8?Q?Reminder=3A=20About=20your=2030%=20discount?=
+From: LetsDefend <olivia@letsdefend.io>
+Reply-To: =?utf-8?Q?LetsDefend?= <olivia@letsdefend.io>
+To: <juan.torres@colaborador.threepoints.com>
+Date: Mon, 20 May 2024 08:29:21 +0000
+Message-ID: <74bda5edf824cea8aad36e707.b2ad357213.20240520082912.563011524b.23593365@mail64.atl261.mcdlv.net>
+X-Mailer: Mailchimp Mailer - **CID563011524bb2ad357213**
+X-Campaign: mailchimp74bda5edf824cea8aad36e707.563011524b
+X-campaignid: mailchimp74bda5edf824cea8aad36e707.563011524b
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=74bda5edf824cea8aad36e707&id=563011524b&e=b2ad357213
+X-MC-User: 74bda5edf824cea8aad36e707
+Feedback-ID: 171215441:171215441.9589741:us14:mc
+List-ID: 74bda5edf824cea8aad36e707mc list <74bda5edf824cea8aad36e707.496857.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://letsdefend.us14.list-manage.com/unsubscribe?u=74bda5edf824cea8aad36e707&id=b5b70df1e0&t=h&e=b2ad357213&c=563011524b>, <mailto:unsubscribe-mc.us14_74bda5edf824cea8aad36e707.563011524b-b2ad357213@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1505768746"
+X-ACFC-SN: orc.011f7a8fd.142
+X-ACF: v2.49
+X-ACFC-V: 2.5.4
+X-ACF: No Attachments
+X-ACFPUB: 1
+Return-Path:
+ bounce-mc.us14_171215441.9589741-b2ad357213@mail64.atl261.mcdlv.net
+X-MS-Exchange-Organization-ExpirationStartTime: 20 May 2024 08:29:43.5899
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 11399dbb-08a9-49f8-39dc-08dc78a70013
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: d70c4195-cdf2-4797-b26c-e913e91c68c6:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DU2PEPF0001E9C6:EE_|AS8PR08MB10142:EE_|GV1PR08MB8475:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DU2PEPF0001E9C6.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 11399dbb-08a9-49f8-39dc-08dc78a70013
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam:
+ BCL:0;ARA:13230031|5063199003|4123199003|5073199003|69100299006|136100200017;
+X-Forefront-Antispam-Report:
+ CIP:130.117.89.11;CTRY:ES;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:jupiterb.iberlayer.com;PTR:jupiterb.iberlayer.com;CAT:NONE;SFS:(13230031)(5063199003)(4123199003)(5073199003)(69100299006)(136100200017);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 May 2024 08:29:43.4805
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 11399dbb-08a9-49f8-39dc-08dc78a70013
+X-MS-Exchange-CrossTenant-Id: d70c4195-cdf2-4797-b26c-e913e91c68c6
+X-MS-Exchange-CrossTenant-AuthSource:
+ DU2PEPF0001E9C6.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8PR08MB10142
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.3248213
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7587.028
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?eGttSUVIMmIzSXJBYS8wL0UvQXZtb0tnY3M2UHY5VTFVeElrNTVUTXE2MVRD?=
+ =?utf-8?B?ZklxRjlkck4rUTVUZFdRTFJNbThUMGNCcjM4WnB0Z2ZCbGQ3QWZWV3Q1UFd0?=
+ =?utf-8?B?eDQ1TXNSWXdJOFQwQVZHbVlkQ3J6T1RaUVlQallEYXdhUTAwcndlbDg0eFhm?=
+ =?utf-8?B?NE1BNUEzRjFNc2wrTHJXdHlpdUs0aTFaalJsNXU1ZGRnMmN1OXRxd3ZKUnk1?=
+ =?utf-8?B?Q1doWUxXeHoxRmJpK01WZ1h4QnJ4QU1FZWhMY2N0TmV1QVllUnFTOWFqNlJv?=
+ =?utf-8?B?TkgyZG9ieWdTdnNjbHdJSWsvUXZ6cWhxN2FlN2RNMFVEYlNhanVRNWdTcGd1?=
+ =?utf-8?B?cXViTDVCLzdIZHVFY1ZEWUFjUm1PeHl1TzJkRVIwT255SC94Y3BCMHA2WGlI?=
+ =?utf-8?B?cEE3WWw0NVVpamc2T0ZBNzNGYUtyVkxkTVBMN0pMd0JqL1dDV0V0MzA5d0xa?=
+ =?utf-8?B?OSsrc3NKcjl3UEYyNFNCVGhIOElKT1FUZWtyZjhDaER4eGtYSENOQ0tYanBj?=
+ =?utf-8?B?d3ZWQ0xaTmw5Tm8ybGszdjlMYXJKcitxb1hIQThxUGV4L3VKS2JnaElrYWtI?=
+ =?utf-8?B?SHE0aTZUSzdCQlhzVWgrNXdZc01GUEF4VlZaUzBFVTRjMGVremg1S05MM3dH?=
+ =?utf-8?B?UGtZMFZHdUJReHhiVmRIL2xETUhUNXpzYTgwUzhibEFYbTFWN2kyVi9SSVRr?=
+ =?utf-8?B?cGw0WXdnTExTN0hpejRYclJqRmIzOVVaTWZLUnNPTFg2Rk8yRFRTcExLMkhs?=
+ =?utf-8?B?SjZSNzA4KzhwenRFYmVMQituMk00S0ppQlVNOUdjYVRkWWhlS0lySkhKdk1R?=
+ =?utf-8?B?Q3o2Sms1UXBKRW9RNGQ5LzBBUmdKbEpaaU5ldkdEVncwYkJrM1BRT2RMeE42?=
+ =?utf-8?B?MUhOcmtUSDNlWUsyR1crRGZxRjkwR2JGUkRQY2pXbmVscFZIZmF2S1JLenVV?=
+ =?utf-8?B?VFVQMXB2UURpaHNnQVVaRi9PZDBuZHhyQ2hjWGFMVnBJM1I0OEhZdW85dWxK?=
+ =?utf-8?B?aHZpMDg3WjhUVEtKeG9zRFdyalQ5eTNxRWNJTzJ0V0NDNlNIYkRuMGIwdjF2?=
+ =?utf-8?B?cTcxVUhoMnIrSTZJQmk1WDZ0bzF6RVdKZkZzUzFpajQrOHRMaExnUjZLVkhK?=
+ =?utf-8?B?S1E1NTdva0IzMnNvYlpHZld6RkpyTlZIblBxRk5JWDQxaFVkT0c3alBzVGg1?=
+ =?utf-8?B?MTczclRsTGZGWkNURWpMdWMzNmlpck9oeUhNLzF3WDRNSGROSlduVDZQUldk?=
+ =?utf-8?B?UnM0bmZ1Sjc4enBBZFY4cURaZytFSzZOQVRBdWpIdld6a0YwbUVjRkdjN2hq?=
+ =?utf-8?B?cGtYOHgrYVorTFYveDBub05tWWYzY091Ym1sM2hHakQ4cGFZWE9EMnV5SkFX?=
+ =?utf-8?B?U0dkb3IwWXpzMmZxYTZXeDdldzQ2cWg2eVhKZ0pUSTBrS3ZPdXc3NjBKc1RD?=
+ =?utf-8?B?UExxWEZaTGdZcTJGbXRWVFljUTNiVlRlOXhmV2c2SGZRMVJpckZSb3ZCWng4?=
+ =?utf-8?B?UHkxR0RIUjRmVlp3M3ZMZVB0WWFpd2pndzRrdndsRGZqa240NmRvZXdBS3Mz?=
+ =?utf-8?B?N2lGRjg5RTkrVmxKZVhDZnYxY3pwL29WQXoxaGUvVUc5SW15emVjbWE1Q0tr?=
+ =?utf-8?B?M1BKSEVrU1dkR3VCaFNWQXpZeU95SlRCNjFLTlBSMFA0a0p4SW8vVk5uWDJO?=
+ =?utf-8?B?YnJ3MXYrWHpmQ2xyWlRZdlBuN1I3WW1qK2dCMUFaMmdJYkxxYlVEOE5tWGxx?=
+ =?utf-8?B?cVFkWDI3OUdYazEyb3hVR3NERWxxSnZ1aWlwSXhDam9CN2tnVStZTU5jdG1j?=
+ =?utf-8?B?NmxvWDN1ek1FUk9MN29LR2dPYzNsSFVQb1FTY0w3K2NOT2tpclRNb2xXb3Ro?=
+ =?utf-8?B?TGZjclg2MnpmRUhHVW1sUFZ6R29IdmM5V0hXYzZUaU5CeUZIODk5KzdTNGxE?=
+ =?utf-8?B?NkRZMmVMN0pMM1lucktqMnNFSkZINGlhb1ZKZjIvR0s3anhkelNJa0srVzhW?=
+ =?utf-8?B?UHRaYkVaMlRUWGt1aXIwTGJHMzhqUG55V0w4SFR6bW0rN1lsVmY1MW9rUnVT?=
+ =?utf-8?B?N3l6ZjRNRUxsNWs1UG43SEVvTHR2QVUzNWVyY1hGc09ucmZxY1djTGkweHNi?=
+ =?utf-8?B?VnBFV0pUZjR6ai84dDh1dGJ4V1dKdVJJS21QVk1GNm4zOVBOVjF2TEt0QW90?=
+ =?utf-8?B?eEJaaDMwR3BlbWxMaExNQ09ybkExbThNYTBGL0hPdTgrVGFrVDlEem9FYUYr?=
+ =?utf-8?B?Q0FYQWozM3ZRWFFXaFM0LzJ1ZUc5R3NwZ1hxSkJ6YWZRd0xnc3VpRGVvV3hN?=
+ =?utf-8?B?THQ0YzM4b0ZQTHpaaDZTMCtFeXk2LzRQendLanhZZFhPL0dwNXNvWkxjZ2x4?=
+ =?utf-8?B?aVdoa0xRaWMrK2pta0Y3dFAzL1F1cDV5MUx0QmxTaFpIRXk3ZmsrdGNMcXNu?=
+ =?utf-8?B?ZlFyYVZBNnVOTW9VWXZ5RmQzMzRLcUlhQXppZmJ6UDMrcHpPakFvMUloYy9q?=
+ =?utf-8?B?VDhCUmI3dVNERlBwam9GVlh0ZU1IV29Ibm5yRUFLMUsrbUFPQlF0Rmh2TTRv?=
+ =?utf-8?B?dWtrQlgzNmJZV1VSeEREbGF4VUJDSkE5S0dtUkhlNWZ4S1J2UDM5NEdGbTNT?=
+ =?utf-8?B?UHpuU3U4WTN2a0ZMdWJoRDN5YjVqSE1uRUc4ZTJURU9iZ3pNSUtmeEx4cmNF?=
+ =?utf-8?B?UDFNOFkrZ2t4SkNFS1RLWWVtSS9Fek15SHNGdHFSZ2V6QUh5MEJvM0o1dm9M?=
+ =?utf-8?B?MUtkZUFiS3owTXdULzZ2Y0ozM1E4UzBBV3Q3a2dLRTFGc2syb08rdmpCQ2lQ?=
+ =?utf-8?B?cUkrYVdRL1hGeDRrS0tvY1VNckZ5VkN3bUR6bmpSdFdaMUtlRWVESnZUYWVG?=
+ =?utf-8?Q?hqlDx3pugJkBrYRG9/Gfc8Qd2HAgNvfAEXeO3Epg=3D?=
+MIME-Version: 1.0
+
+--_----------=_MCPart_1505768746
+Content-Type: text/plain; charset="utf-8"; format=fixed
+Content-Transfer-Encoding: quoted-printable
+
+PRECAUCI=C3=93N: Este email proviene de fuera de la organizaci=C3=B3n. No h=
+aga click en links o abra adjuntos a menos que conozca al remitente y est=
+=C3=A9 convencido de que se trata de contenido seguro.
+
+I saw that you didnt use your 30% discount code on LetsDefend.
+
+Hi,
+
+
+I saw that you didnt use your 30% discount code. If you=E2=80=99re planning=
+ to LetsDefend actively, i recommend using the discount code before its exp=
+ires, you still have about 20 hours to use it.
+
+
+Code: MAY30
+
+Redeem Coupon<https://letsdefend.us14.list-manage.com/track/click?u=3D74bda=
+5edf824cea8aad36e707&id=3D42a1b30a93&e=3Db2ad357213>
+
+I hope it helps!
+
+
+Regards
+
+
+Olivia
+
+LetsDefend
+
+[Logo]<https://letsdefend.us14.list-manage.com/track/click?u=3D74bda5edf824=
+cea8aad36e707&id=3D43efdac538&e=3Db2ad357213>
+
+Copyright (C) 2024 LetsDefend. All rights reserved.
+You are receiving this email because you opted in via our website.
+
+Our mailing address is:
+LetsDefend 13873 Park Center Rd Suite 181 Herndon, Virginia 20171 USA
+
+Want to change how you receive these emails?
+You can update your preferences<https://letsdefend.us14.list-manage.com/pro=
+file?u=3D74bda5edf824cea8aad36e707&id=3Db5b70df1e0&e=3Db2ad357213&c=3D56301=
+1524b> or unsubscribe<https://letsdefend.us14.list-manage.com/unsubscribe?u=
+=3D74bda5edf824cea8aad36e707&id=3Db5b70df1e0&t=3Db&e=3Db2ad357213&c=3D56301=
+1524b>
+
+
+
+--_----------=_MCPart_1505768746
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:offi=
+ce"><head><!--[if gte mso 15]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+>
+<title>Reminder: About your 30% discount</title>
+<style>          img{-ms-interpolation-mode:bicubic;}
+          table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+          .mceStandardButton, .mceStandardButton td, .mceStandardButton td =
+a{mso-hide:all !important;}
+          p, a, li, td, blockquote{mso-line-height-rule:exactly;}
+          p, a, li, td, body, table, blockquote{-ms-text-size-adjust:100%; =
+-webkit-text-size-adjust:100%;}
+          @media only screen and (max-width: 480px){
+            body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:=
+none !important;}
+          }
+          .mcnPreviewText{display: none !important;}
+          .bodyCell{margin:0 auto; padding:0; width:100%;}
+          .ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalCla=
+ss div, .ExternalClass span, .ExternalClass font{line-height:100%;}
+          .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+          a[x-apple-data-detectors]{color:inherit !important; text-decorati=
+on:none !important; font-size:inherit !important; font-family:inherit !impo=
+rtant; font-weight:inherit !important; line-height:inherit !important;}
+            body{height:100%; margin:0; padding:0; width:100%; background: =
+#ffffff;}
+            p{margin:0; padding:0;}
+            table{border-collapse:collapse;}
+            td, p, a{word-break:break-word;}
+            h1, h2, h3, h4, h5, h6{display:block; margin:0; padding:0;}
+            img, a img{border:0; height:auto; outline:none; text-decoration=
+:none;}
+            a[href^=3D"tel"], a[href^=3D"sms"]{color:inherit; cursor:defaul=
+t; text-decoration:none;}
+            li p {margin: 0 !important;}
+            .ProseMirror a {
+                pointer-events: none;
+            }
+            @media only screen and (max-width: 640px){
+                .mceClusterLayout td{padding: 4px !important;}
+            }
+            @media only screen and (max-width: 480px){
+                body{width:100% !important; min-width:100% !important; }
+                body.mobile-native {
+                    -webkit-user-select: none; user-select: none; transitio=
+n: transform 0.2s ease-in; transform-origin: top center;
+                }
+                body.mobile-native.selection-allowed a, body.mobile-native.=
+selection-allowed .ProseMirror {
+                    user-select: auto;
+                    -webkit-user-select: auto;
+                }
+                colgroup{display: none;}
+                img{height: auto !important;}
+                .mceWidthContainer{max-width: 660px !important;}
+                .mceColumn{display: block !important; width: 100% !importan=
+t;}
+                .mceColumn-forceSpan{display: table-cell !important; width:=
+ auto !important;}
+                .mceColumn-forceSpan .mceButton a{min-width:0 !important;}
+                .mceBlockContainer{padding-right:16px !important; padding-l=
+eft:16px !important;}
+                .mceTextBlockContainer{padding-right:16px !important; paddi=
+ng-left:16px !important;}
+                .mceBlockContainerE2E{padding-right:0px; padding-left:0px;}
+                .mceSpacing-24{padding-right:16px !important; padding-left:=
+16px !important;}
+                .mceImage, .mceLogo{width: 100% !important; height: auto !i=
+mportant;}
+                .mceFooterSection .mceText, .mceFooterSection .mceText p{fo=
+nt-size: 16px !important; line-height: 140% !important;}
+            }
+            div[contenteditable=3D"true"] {outline: 0;}
+            .ProseMirror .empty-node, .ProseMirror:empty {position: relativ=
+e;}
+            .ProseMirror .empty-node::before, .ProseMirror:empty::before {
+                position: absolute;
+                left: 0;
+                right: 0;
+                color: rgba(0,0,0,0.2);
+                cursor: text;
+            }
+            .ProseMirror .empty-node:hover::before, .ProseMirror:empty:hove=
+r::before {
+                color: rgba(0,0,0,0.3);
+            }
+            .ProseMirror h1.empty-node:only-child::before,
+            .ProseMirror h2.empty-node:only-child::before,
+            .ProseMirror h3.empty-node:only-child::before,
+            .ProseMirror h4.empty-node:only-child::before {
+                content: 'Heading';
+            }
+            .ProseMirror p.empty-node:only-child::before, .ProseMirror:empt=
+y::before {
+                content: 'Start typing...';
+            }
+            a .ProseMirror p.empty-node::before, a .ProseMirror:empty::befo=
+re {
+                content: '';
+            }
+
+            .mceImageBorder {display: inline-block;}
+            .mceImageBorder img {border: 0 !important;}
+body, #bodyTable { background-color: rgb(244, 244, 244); }.mceText, .mceLab=
+el { font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif; =
+}.mceText, .mceLabel { color: rgb(0, 0, 0); }.mceText p { margin-bottom: 0p=
+x; }.mceText label { margin-bottom: 0px; }.mceText input { margin-bottom: 0=
+px; }.mceSpacing-12 .mceInput + .mceErrorMessage { margin-top: -6px; }.mceT=
+ext p { margin-bottom: 0px; }.mceText label { margin-bottom: 0px; }.mceText=
+ input { margin-bottom: 0px; }.mceSpacing-24 .mceInput + .mceErrorMessage {=
+ margin-top: -12px; }.mceInput { background-color: transparent; border: 2px=
+ solid rgb(208, 208, 208); width: 60%; color: rgb(77, 77, 77); display: blo=
+ck; }.mceInput[type=3D"radio"], .mceInput[type=3D"checkbox"] { float: left;=
+ margin-right: 12px; display: inline; width: auto !important; }.mceLabel > =
+.mceInput { margin-bottom: 0px; margin-top: 2px; }.mceLabel { display: bloc=
+k; }.mceText p { color: rgb(0, 0, 0); font-family: "Helvetica Neue", Helvet=
+ica, Arial, Verdana, sans-serif; font-size: 16px; font-weight: normal; line=
+-height: 1.5; text-align: left; direction: ltr; }.mceText a { color: rgb(0,=
+ 0, 0); font-style: normal; font-weight: normal; text-decoration: underline=
+; direction: ltr; }
+@media only screen and (max-width: 480px) {
+            .mceText p { font-size: 16px !important; line-height: 1.5 !impo=
+rtant; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceBlockContainer { padding-left: 16px !important; padding-rig=
+ht: 16px !important; }
+          }
+#dataBlockId-9 p, #dataBlockId-9 h1, #dataBlockId-9 h2, #dataBlockId-9 h3, =
+#dataBlockId-9 h4, #dataBlockId-9 ul { text-align: center; }</style>
+</head>
+<body>
+<div style=3D"border:solid #9C6500 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt">
+<p style=3D"margin:0cm;margin-bottom:.0001pt;font-size:11.0pt;font-family:'=
+Calibri',sans-serif;line-height:12.0pt;background:#FFEB9C">
+<b><span style=3D"font-size:10.0pt;color:#9C6500">PRECAUCI=C3=93N:</span></=
+b><span style=3D"font-size:10.0pt;color:black"> Este email proviene de fuer=
+a de la organizaci=C3=B3n. No haga click en links o abra adjuntos a menos q=
+ue conozca al remitente y est=C3=A9 convencido de que
+ se trata de contenido seguro.<o:p></o:p></p>
+</div>
+<br>
+</span>
+<div><!--
+--><!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displ=
+ay:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">I saw that you d=
+idnt use your 30% discount
+ code on LetsDefend.</span><!--<![endif]--><!--
+-->
+<center>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wid=
+th=3D"100%" id=3D"bodyTable" style=3D"background-color: rgb(244, 244, 244);=
+">
+<tbody>
+<tr>
+<td class=3D"bodyCell" align=3D"center" valign=3D"top">
+<table id=3D"root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+<tbody data-block-id=3D"13" class=3D"mceWrapper">
+<tr>
+<td align=3D"center" valign=3D"top" class=3D"mceWrapperOuter"><!--[if (gte =
+mso 9)|(IE)]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"660" style=3D"width:660px;"><tr><td><![endif]-->
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"max-width:660px" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"background-color:#ffffff;background-position:center;background=
+-repeat:no-repeat;background-size:cover" class=3D"mceWrapperInner" valign=
+=3D"top">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation" data-block-id=3D"12">
+<tbody>
+<tr class=3D"mceRow">
+<td style=3D"background-position:center;background-repeat:no-repeat;backgro=
+und-size:cover" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding-top:0;padding-bottom:0" class=3D"mceColumn" data-block=
+-id=3D"-4" valign=3D"top" colspan=3D"12" width=3D"100%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"background-color:transparent;padding-top:0;padding-bottom:0;pa=
+dding-right:0;padding-left:0" class=3D"mceBlockContainer" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"background-color:transparent" role=3D"presentation" class=3D"mceDivide=
+rContainer" data-block-id=3D"2">
+<tbody>
+<tr>
+<td style=3D"min-width:100%;border-top:20px solid transparent" class=3D"mce=
+DividerBlock" valign=3D"top">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:transparent;padding-top:0;padding-bottom:0;pa=
+dding-right:0;padding-left:0" class=3D"mceBlockContainer" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"background-color:transparent" role=3D"presentation" class=3D"mceDivide=
+rContainer" data-block-id=3D"4">
+<tbody>
+<tr>
+<td style=3D"min-width:100%;border-top:20px solid transparent" class=3D"mce=
+DividerBlock" valign=3D"top">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0"=
+ valign=3D"top">
+<table width=3D"100%" style=3D"border:0;border-collapse:separate">
+<tbody>
+<tr>
+<td style=3D"padding-left:24px;padding-right:24px;padding-top:12px;padding-=
+bottom:12px" class=3D"mceTextBlockContainer">
+<div data-block-id=3D"17" class=3D"mceText" id=3D"dataBlockId-17" style=3D"=
+width:100%">
+<p>Hi,</p>
+<p><br>
+</p>
+<p>I saw that you didnt use your 30% discount code. If you=E2=80=99re plann=
+ing to LetsDefend actively, i recommend using the discount code before its =
+expires, you still have about 20 hours to use it.</p>
+<p><br>
+</p>
+<p class=3D"last-child">Code: MAY30</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-top:12px;padding-bottom:12px;padding-right:24px;paddin=
+g-left:24px" class=3D"mceBlockContainer" align=3D"left" valign=3D"top">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" data-block-id=3D"15" class=3D"mceButtonContainer">
+<tbody>
+<tr>
+<!--[if !mso]><!-->
+</tr>
+<tr class=3D"mceStandardButton">
+<td style=3D"background-color:#a046ff;border-radius:8px;text-align:center" =
+class=3D"mceButton" valign=3D"top">
+<a href=3D"https://letsdefend.us14.list-manage.com/track/click?u=3D74bda5ed=
+f824cea8aad36e707&amp;id=3D42a1b30a93&amp;e=3Db2ad357213" target=3D"_blank"=
+ class=3D"mceButtonLink" style=3D"background-color:#a046ff;border-radius:8p=
+x;border:1px solid #a046ff;color:#ffffff;display:block;font-family:'Helveti=
+ca Neue', Helvetica, Arial, Verdana, sans-serif;font-size:16px;font-weight:=
+normal;font-style:normal;padding:16px 28px;text-decoration:none;min-width:3=
+0px;text-align:center;direction:ltr;letter-spacing:0px">Redeem
+ Coupon</a></td>
+</tr>
+<tr>
+<!--<![endif]-->
+</tr>
+<tr>
+<!--[if mso]>
+<td align=3D"left">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://app.letsdefend.io/vip?discount=3DMAY30"
+style=3D"v-text-anchor:middle; width:179.52px; height:53px;"
+arcsize=3D"4%"
+strokecolor=3D"#a046ff"
+strokeweight=3D"1px"
+fillcolor=3D"#a046ff">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+font-size: 16;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Redeem Coupon
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0"=
+ valign=3D"top">
+<table width=3D"100%" style=3D"border:0;border-collapse:separate">
+<tbody>
+<tr>
+<td style=3D"padding-left:24px;padding-right:24px;padding-top:12px;padding-=
+bottom:12px" class=3D"mceTextBlockContainer">
+<div data-block-id=3D"16" class=3D"mceText" id=3D"dataBlockId-16" style=3D"=
+width:100%">
+<p>I hope it helps!</p>
+<p><br>
+</p>
+<p>Regards</p>
+<p><br>
+</p>
+<p>Olivia</p>
+<p class=3D"last-child">LetsDefend</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color:transparent;padding-top:0;padding-bottom:0;pa=
+dding-right:0;padding-left:0" class=3D"mceBlockContainer" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" styl=
+e=3D"background-color:transparent" role=3D"presentation" class=3D"mceDivide=
+rContainer" data-block-id=3D"7">
+<tbody>
+<tr>
+<td style=3D"min-width:100%;border-top:20px solid transparent" class=3D"mce=
+DividerBlock" valign=3D"top">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-top:8px;padding-bottom:8px;padding-right:8px;padding-l=
+eft:8px" class=3D"mceLayoutContainer" valign=3D"top">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation" data-block-id=3D"11" id=3D"section_1f5b9=
+bcfe826fa69c8fa53218d508c58" class=3D"mceFooterSection">
+<tbody>
+<tr class=3D"mceRow">
+<td style=3D"background-position:center;background-repeat:no-repeat;backgro=
+und-size:cover" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"12" width=3D"100%" rol=
+e=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding-top:0;padding-bottom:0;margin-bottom:12px" class=3D"mc=
+eColumn" data-block-id=3D"-3" valign=3D"top" colspan=3D"12" width=3D"100%">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding-top:12px;padding-bottom:12px;padding-right:24px;paddin=
+g-left:24px" class=3D"mceBlockContainer" align=3D"center" valign=3D"top">
+<a href=3D"https://letsdefend.us14.list-manage.com/track/click?u=3D74bda5ed=
+f824cea8aad36e707&amp;id=3D43efdac538&amp;e=3Db2ad357213" style=3D"display:=
+block" target=3D"_blank" data-block-id=3D"8"><span class=3D"mceImageBorder"=
+ style=3D"border:0;vertical-align:top;margin:0"><img width=3D"130" height=
+=3D"auto" style=3D"width:130px;height:auto;max-width:130px !important;displ=
+ay:block" alt=3D"Logo" src=3D"https://mcusercontent.com/74bda5edf824cea8aad=
+36e707/images/96266493-38c6-2d28-42d6-2d109de01734.png" class=3D"mceLogo"><=
+/span></a></td>
+</tr>
+<tr>
+<td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0"=
+ align=3D"center" valign=3D"top">
+<table width=3D"100%" style=3D"border:0;border-collapse:separate">
+<tbody>
+<tr>
+<td style=3D"padding-left:16px;padding-right:16px;padding-top:12px;padding-=
+bottom:12px" class=3D"mceTextBlockContainer">
+<div data-block-id=3D"9" class=3D"mceText" id=3D"dataBlockId-9" style=3D"di=
+splay:inline-block;width:100%">
+<p class=3D"last-child"><em><span style=3D"font-size: 12px">Copyright (C) 2=
+024 LetsDefend. All rights reserved.</span></em><br>
+<span style=3D"font-size: 12px">You are receiving this email because you op=
+ted in via our website.
+</span><br>
+<br>
+<span style=3D"font-size: 12px">Our mailing address is:</span><br>
+<span style=3D"font-size: 12px">LetsDefend 13873 Park Center Rd Suite 181 H=
+erndon, Virginia 20171 USA
+</span><br>
+<br>
+<span style=3D"font-size: 12px">Want to change how you receive these emails=
+?</span><br>
+<span style=3D"font-size: 12px">You can </span><a href=3D"https://letsdefen=
+d.us14.list-manage.com/profile?u=3D74bda5edf824cea8aad36e707&amp;id=3Db5b70=
+df1e0&amp;e=3Db2ad357213&amp;c=3D563011524b"><span style=3D"font-size: 12px=
+">update your preferences</span></a><span style=3D"font-size: 12px">
+ or </span><a href=3D"https://letsdefend.us14.list-manage.com/unsubscribe?u=
+=3D74bda5edf824cea8aad36e707&amp;id=3Db5b70df1e0&amp;t=3Db&amp;e=3Db2ad3572=
+13&amp;c=3D563011524b"><span style=3D"font-size: 12px">unsubscribe</span></=
+a></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class=3D"mceLayoutContainer" align=3D"center" valign=3D"top">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation" data-block-id=3D"-2">
+<tbody>
+<tr class=3D"mceRow">
+<td style=3D"background-position:center;background-repeat:no-repeat;backgro=
+und-size:cover;padding-top:0px;padding-bottom:0px" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" rol=
+e=3D"presentation">
+<tbody>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<img src=3D"https://letsdefend.us14.list-manage.com/track/open.php?u=3D74bd=
+a5edf824cea8aad36e707&amp;id=3D563011524b&amp;e=3Db2ad357213" height=3D"1" =
+width=3D"1" alt=3D""></div>
+</body>
+</html>
+
+--_----------=_MCPart_1505768746--
